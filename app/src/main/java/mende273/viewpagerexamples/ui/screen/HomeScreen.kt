@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import mende273.viewpagerexamples.Screen
@@ -17,7 +18,7 @@ import mende273.viewpagerexamples.ui.component.NavigationButtonComponent
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier, onItemClicked: (Screen) -> Unit) {
     Box(
-        modifier = modifier,
+        modifier = modifier.testTag("test_tag_home_screen"),
         contentAlignment = Alignment.Center
     ) {
         Column(
