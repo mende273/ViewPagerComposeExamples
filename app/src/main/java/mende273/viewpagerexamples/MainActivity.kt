@@ -68,11 +68,11 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-private fun AppNavigation(
+fun AppNavigation(
     modifier: Modifier = Modifier,
-    paddingValues: PaddingValues,
+    paddingValues: PaddingValues = PaddingValues(),
     navHostController: NavHostController,
-    currentScreenTitle: (Int) -> Unit
+    currentScreenTitle: (Int) -> Unit = {}
 ) {
     NavHost(
         navController = navHostController,
