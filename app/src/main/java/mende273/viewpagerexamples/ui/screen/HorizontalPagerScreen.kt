@@ -4,6 +4,7 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import mende273.viewpagerexamples.ui.component.ViewPagerItem
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -13,4 +14,10 @@ fun HorizontalPagerScreen() {
     HorizontalPager(pageCount = 10, state = pagerState) { page ->
         ViewPagerItem(page = page)
     }
+}
+
+@Preview
+@Composable
+private fun HorizontalPagerScreenPreview() {
+    HorizontalPagerScreen()
 }

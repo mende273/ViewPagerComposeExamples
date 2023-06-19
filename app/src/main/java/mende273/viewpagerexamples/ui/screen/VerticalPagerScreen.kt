@@ -5,6 +5,7 @@ import androidx.compose.foundation.pager.PageSize
 import androidx.compose.foundation.pager.VerticalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import mende273.viewpagerexamples.ui.component.ViewPagerItem
 
@@ -19,4 +20,10 @@ fun VerticalPagerScreen() {
     ) { page ->
         ViewPagerItem(page = page)
     }
+}
+
+@Preview
+@Composable
+private fun VerticalPagerScreenPreview() {
+    VerticalPagerScreen()
 }
