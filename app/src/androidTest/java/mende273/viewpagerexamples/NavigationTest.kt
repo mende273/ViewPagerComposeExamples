@@ -40,7 +40,7 @@ class NavigationTest {
     fun appNavHost_verifyGoToHorizontalPagerScreen() {
         composeTestRule.onNodeWithTag("test_tag_horizontal_pager").performClick()
         val route = navController.currentDestination?.route
-        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_EXAMPLE.route)
+        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER.route)
     }
 
     //TODO add tests for all screens

@@ -92,25 +92,25 @@ fun AppNavigation(
                 })
         }
 
-        composable(Screen.HORIZONTAL_PAGER_EXAMPLE.route) {
+        composable(Screen.HORIZONTAL_PAGER.route) {
             HorizontalPagerScreen()
         }
 
-        composable(Screen.HORIZONTAL_PAGER_WITH_BUTTONS_EXAMPLE.route) {
+        composable(Screen.HORIZONTAL_PAGER_WITH_BUTTONS.route) {
             HorizontalPagerWithButtonsScreen()
         }
 
-        composable(Screen.HORIZONTAL_PAGER_WITH_IMAGE_AND_DOTS_EXAMPLE.route) {
-            HorizontalPagerWithImageAndDotsExampleScreen()
+        composable(Screen.HORIZONTAL_PAGER_WITH_IMAGE_AND_DOTS.route) {
+            HorizontalPagerWithImageAndDotsScreen()
         }
 
-        composable(Screen.VERTICAL_PAGER_EXAMPLE.route) {
+        composable(Screen.VERTICAL_PAGER.route) {
             VerticalPagerScreen()
         }
     }
 }
 
 @Composable
-private fun HorizontalPagerWithImageAndDotsExampleScreen() {
+private fun HorizontalPagerWithImageAndDotsScreen() {
     Text(text = "HorizontalPagerWithImageAndDotsExampleScreen")
 }

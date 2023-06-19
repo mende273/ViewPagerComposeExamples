@@ -24,5 +24,5 @@ fun NavigationButtonComponent(
 @Preview
 @Composable
 private fun NavigationButtonComponentPreview() {
-    NavigationButtonComponent(screen = Screen.HORIZONTAL_PAGER_EXAMPLE, onItemClicked = {})
+    NavigationButtonComponent(screen = Screen.HORIZONTAL_PAGER, onItemClicked = {})
 }
