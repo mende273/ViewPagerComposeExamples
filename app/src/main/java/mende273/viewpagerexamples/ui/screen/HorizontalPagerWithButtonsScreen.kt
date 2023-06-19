@@ -1,16 +1,13 @@
 package mende273.viewpagerexamples.ui.screen
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
@@ -23,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 import mende273.viewpagerexamples.R
 import mende273.viewpagerexamples.ui.component.ViewPagerButton
-import mende273.viewpagerexamples.util.getBackgroundColorForItem
+import mende273.viewpagerexamples.ui.component.ViewPagerItem
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -54,15 +51,7 @@ fun HorizontalPagerWithButtonsScreen() {
 
     Box(modifier = Modifier) {
         HorizontalPager(pageCount = pageCount, state = pagerState) { page ->
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(300.dp)
-                    .background(getBackgroundColorForItem(page)),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(text = "Page: $page")
-            }
+            ViewPagerItem(page = page)
         }
 
         Row(
