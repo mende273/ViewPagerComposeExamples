@@ -6,4 +6,7 @@
     <string name="screen_horizontal_pager_with_buttons_title">Horizontal Pager With Buttons Example</string>
     <string name="screen_horizontal_pager_with_image_and_dots_title">Horizontal Pager with image and buttons example</string>
     <string name="screen_vertical_pager_title">Vertical Pager Example</string>
+
+    <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
 </resources>
