@@ -24,6 +24,7 @@ import androidx.navigation.compose.rememberNavController
 import mende273.viewpagerexamples.ui.component.TopBar
 import mende273.viewpagerexamples.ui.screen.HomeScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerScreen
+import mende273.viewpagerexamples.ui.screen.VerticalPagerScreen
 import mende273.viewpagerexamples.ui.theme.ViewPagerComposeExamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -104,7 +105,7 @@ fun AppNavigation(
         }
 
         composable(Screen.VERTICAL_PAGER_EXAMPLE.route) {
-            VerticalPagerExampleScreen()
+            VerticalPagerScreen()
         }
     }
 }
@@ -117,9 +118,4 @@ private fun HorizontalPagerWithButtonsExampleScreen() {
 @Composable
 private fun HorizontalPagerWithImageAndDotsExampleScreen() {
     Text(text = "HorizontalPagerWithImageAndDotsExampleScreen")
-}
-
-@Composable
-private fun VerticalPagerExampleScreen() {
-    Text(text = "VerticalPagerExampleScreen")
 }
