@@ -5,6 +5,7 @@
     <string name="screen_horizontal_pager_title">Horizontal Pager Example</string>
     <string name="screen_horizontal_pager_with_buttons_title">Horizontal Pager With Buttons Example</string>
     <string name="screen_horizontal_pager_with_dots_indicator_title">Horizontal Pager with dots indicator example</string>
+    <string name="screen_horizontal_pager_with_lines_indicator_title">Horizontal Pager with lines indicator example</string>
     <string name="screen_vertical_pager_title">Vertical Pager Example</string>
 
     <string name="next_button">Next</string>

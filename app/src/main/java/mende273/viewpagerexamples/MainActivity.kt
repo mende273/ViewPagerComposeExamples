@@ -25,6 +25,7 @@ import mende273.viewpagerexamples.ui.screen.HomeScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerWithButtonsScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerWithDotsIndicatorScreen
+import mende273.viewpagerexamples.ui.screen.HorizontalPagerWithLinesIndicatorScreen
 import mende273.viewpagerexamples.ui.screen.VerticalPagerScreen
 import mende273.viewpagerexamples.ui.theme.ViewPagerComposeExamplesTheme
 
@@ -102,6 +103,10 @@ fun AppNavigation(
 
         composable(Screen.HORIZONTAL_PAGER_WITH_DOTS_INDICATOR.route) {
             HorizontalPagerWithDotsIndicatorScreen()
+        }
+
+        composable(Screen.HORIZONTAL_PAGER_WITH_LINES_INDICATOR.route) {
+            HorizontalPagerWithLinesIndicatorScreen()
         }
 
         composable(Screen.VERTICAL_PAGER.route) {
