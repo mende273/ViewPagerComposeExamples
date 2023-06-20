@@ -8,17 +8,20 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import mende273.viewpagerexamples.util.getBackgroundColorForItem
 
 @Composable
-fun ViewPagerItem(page: Int) {
+fun ViewPagerItem(page: Int, preferredBackground: Color? = null) {
+    val backgroundColor = preferredBackground ?: getBackgroundColorForItem(page)
+
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .height(300.dp)
-            .background(getBackgroundColorForItem(page)),
+            .background(backgroundColor),
         contentAlignment = Alignment.Center
     ) {
         Text(text = "Page: $page")
@@ -27,6 +30,6 @@ fun ViewPagerItem(page: Int) {
 
 @Preview
 @Composable
-private fun ViewPagerItemPreview(){
+private fun ViewPagerItemPreview() {
     ViewPagerItem(page = 0)
 }
