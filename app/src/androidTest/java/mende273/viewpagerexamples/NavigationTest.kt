@@ -59,6 +59,14 @@ class NavigationTest {
     }
 
     @Test
+    fun appNavHost_verifyGoToHorizontalPagerWithLinesIndicatorScreen() {
+        composeTestRule.onNodeWithTag("test_tag_horizontal_pager_with_lines_indicator")
+            .performClick()
+        val route = navController.currentDestination?.route
+        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_WITH_LINES_INDICATOR.route)
+    }
+
+    @Test
     fun appNavHost_verifyGoToVerticalPagerScreen() {
         composeTestRule.onNodeWithTag("test_tag_vertical_pager").performClick()
         val route = navController.currentDestination?.route
