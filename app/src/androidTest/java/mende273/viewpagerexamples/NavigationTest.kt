@@ -51,11 +51,11 @@ class NavigationTest {
     }
 
     @Test
-    fun appNavHost_verifyGoToHorizontalPagerWithImageAndDotsScreen() {
-        composeTestRule.onNodeWithTag("test_tag_horizontal_pager_with_image_and_dots")
+    fun appNavHost_verifyGoToHorizontalPagerWithDotsIndicatorScreen() {
+        composeTestRule.onNodeWithTag("test_tag_horizontal_pager_with_dots_indicator")
             .performClick()
         val route = navController.currentDestination?.route
-        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_WITH_IMAGE_AND_DOTS.route)
+        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_WITH_DOTS_INDICATOR.route)
     }
 
     @Test
