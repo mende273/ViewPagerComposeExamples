@@ -43,5 +43,25 @@ class NavigationTest {
         Assert.assertEquals(route, Screen.HORIZONTAL_PAGER.route)
     }
 
-    //TODO add tests for all screens
+    @Test
+    fun appNavHost_verifyGoToHorizontalPagerWithButtonsScreen() {
+        composeTestRule.onNodeWithTag("test_tag_horizontal_pager_with_buttons").performClick()
+        val route = navController.currentDestination?.route
+        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_WITH_BUTTONS.route)
+    }
+
+    @Test
+    fun appNavHost_verifyGoToHorizontalPagerWithImageAndDotsScreen() {
+        composeTestRule.onNodeWithTag("test_tag_horizontal_pager_with_image_and_dots")
+            .performClick()
+        val route = navController.currentDestination?.route
+        Assert.assertEquals(route, Screen.HORIZONTAL_PAGER_WITH_IMAGE_AND_DOTS.route)
+    }
+
+    @Test
+    fun appNavHost_verifyGoToVerticalPagerScreen() {
+        composeTestRule.onNodeWithTag("test_tag_vertical_pager").performClick()
+        val route = navController.currentDestination?.route
+        Assert.assertEquals(route, Screen.VERTICAL_PAGER.route)
+    }
 }
