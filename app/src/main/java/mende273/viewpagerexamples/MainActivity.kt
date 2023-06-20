@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -25,6 +24,7 @@ import mende273.viewpagerexamples.ui.component.TopBar
 import mende273.viewpagerexamples.ui.screen.HomeScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerScreen
 import mende273.viewpagerexamples.ui.screen.HorizontalPagerWithButtonsScreen
+import mende273.viewpagerexamples.ui.screen.HorizontalPagerWithDotsIndicatorScreen
 import mende273.viewpagerexamples.ui.screen.VerticalPagerScreen
 import mende273.viewpagerexamples.ui.theme.ViewPagerComposeExamplesTheme
 
@@ -100,17 +100,12 @@ fun AppNavigation(
             HorizontalPagerWithButtonsScreen()
         }
 
-        composable(Screen.HORIZONTAL_PAGER_WITH_IMAGE_AND_DOTS.route) {
-            HorizontalPagerWithImageAndDotsScreen()
+        composable(Screen.HORIZONTAL_PAGER_WITH_DOTS_INDICATOR.route) {
+            HorizontalPagerWithDotsIndicatorScreen()
         }
 
         composable(Screen.VERTICAL_PAGER.route) {
             VerticalPagerScreen()
         }
     }
-}
-
-@Composable
-private fun HorizontalPagerWithImageAndDotsScreen() {
-    Text(text = "HorizontalPagerWithImageAndDotsExampleScreen")
 }
