@@ -12,6 +12,10 @@ Currently the project contains 5 examples for Horizontal and Vertical ViewPager.
 | --- | --- |
 | <img src="/screenshots/horizontal_pager_with_dots_indicator.png" width="250"> | <img src="/screenshots/horizontal_pager_with_lines_indicator.png" width="250"> |
 
+| With Tabs | with Scrollable Tabs |
+| --- | --- |
+| <img src="/screenshots/tabs_with_horizontal_pager.png" width="250"> | <img src="/screenshots/scrollable_tabs_with_horizontal_pager.png" width="250"> |
+
 ### Vertical Pager Example
 | Simple Example |
 | --- |
