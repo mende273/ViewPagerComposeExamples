@@ -17,5 +17,13 @@ enum class Screen(val route: String, @StringRes val title: Int) {
         "horizontal_pager_with_lines_indicator",
         R.string.screen_horizontal_pager_with_lines_indicator_title
     ),
+    TABS_WITH_HORIZONTAL_PAGER(
+        "tabs_with_horizontal_pager",
+        R.string.screen_tabs_with_horizontal_pager_title
+    ),
+    SCROLLABLE_TABS_WITH_HORIZONTAL_PAGER(
+        "scrollable_tabs_with_horizontal_pager",
+        R.string.screen_scrollable_tabs_with_horizontal_pager_title
+    ),
     VERTICAL_PAGER("vertical_pager", R.string.screen_vertical_pager_title)
 }
