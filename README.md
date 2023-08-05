@@ -1,6 +1,6 @@
 # ViewPagerComposeExamples
 Simple examples demonstrating the use of the official ViewPager for Jetpack Compose. The project uses the Navigation Component for navigating between the examples.
-Currently the project contains 5 examples for Horizontal and Vertical ViewPager.
+Currently the project contains 7 examples for Horizontal and Vertical ViewPager.
 
 ## Project Screenshots
 ### Horizontal Pager Examples
