@@ -1,6 +1,6 @@
 # ViewPagerComposeExamples
 Simple examples demonstrating the use of the official ViewPager for Jetpack Compose. The project uses the Navigation Component for navigating between the examples.
-Currently the project contains 5 examples for Horizontal and Vertical ViewPager.
+Currently the project contains 7 examples for Horizontal and Vertical ViewPager.
 
 ## Project Screenshots
 ### Horizontal Pager Examples
@@ -11,6 +11,10 @@ Currently the project contains 5 examples for Horizontal and Vertical ViewPager.
 | With dots indicator | with lines indicator |
 | --- | --- |
 | <img src="/screenshots/horizontal_pager_with_dots_indicator.png" width="250"> | <img src="/screenshots/horizontal_pager_with_lines_indicator.png" width="250"> |
+
+| With Tabs | with Scrollable Tabs |
+| --- | --- |
+| <img src="/screenshots/tabs_with_horizontal_pager.png" width="250"> | <img src="/screenshots/scrollable_tabs_with_horizontal_pager.png" width="250"> |
 
 ### Vertical Pager Example
 | Simple Example |
