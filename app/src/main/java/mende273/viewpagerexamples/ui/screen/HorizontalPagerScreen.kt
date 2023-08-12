@@ -10,8 +10,8 @@ import mende273.viewpagerexamples.ui.component.ViewPagerItem
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerScreen() {
-    val pagerState = rememberPagerState()
-    HorizontalPager(pageCount = 10, state = pagerState) { page ->
+    val pagerState = rememberPagerState(pageCount = { 10 })
+    HorizontalPager(state = pagerState) { page ->
         ViewPagerItem(page = page)
     }
 }

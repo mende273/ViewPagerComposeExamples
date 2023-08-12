@@ -27,7 +27,7 @@ import mende273.viewpagerexamples.ui.component.ViewPagerItem
 @Composable
 fun HorizontalPagerWithButtonsScreen() {
     val pageCount = 10
-    val pagerState = rememberPagerState()
+    val pagerState = rememberPagerState(pageCount = { pageCount })
     val coroutineScope = rememberCoroutineScope()
 
     val shouldShowPrevButton by remember {
@@ -51,7 +51,7 @@ fun HorizontalPagerWithButtonsScreen() {
     }
 
     Box(modifier = Modifier) {
-        HorizontalPager(pageCount = pageCount, state = pagerState) { page ->
+        HorizontalPager(state = pagerState) { page ->
             ViewPagerItem(page = page)
         }
 
