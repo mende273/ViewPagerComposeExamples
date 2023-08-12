@@ -19,10 +19,11 @@ import mende273.viewpagerexamples.ui.component.ViewPagerLinesIndicator
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerWithLinesIndicatorScreen() {
-    val pagerState = rememberPagerState()
     val pageCount = 5
+    val pagerState = rememberPagerState(pageCount = { pageCount })
+
     Box(modifier = Modifier) {
-        HorizontalPager(pageCount = pageCount, state = pagerState) { page ->
+        HorizontalPager(state = pagerState) { page ->
             ViewPagerItem(page = page, Color.Gray)
         }
 

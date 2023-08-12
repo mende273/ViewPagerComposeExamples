@@ -12,9 +12,9 @@ import mende273.viewpagerexamples.ui.component.ViewPagerItem
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun VerticalPagerScreen() {
-    val pagerState = rememberPagerState()
+    val pageCount = 10
+    val pagerState = rememberPagerState(pageCount = { pageCount })
     VerticalPager(
-        pageCount = 10,
         pageSize = PageSize.Fixed(300.dp),
         state = pagerState
     ) { page ->

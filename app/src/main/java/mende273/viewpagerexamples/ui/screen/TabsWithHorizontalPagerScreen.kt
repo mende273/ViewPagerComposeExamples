@@ -23,10 +23,10 @@ import mende273.viewpagerexamples.ui.component.TextComponent
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun TabsWithHorizontalPagerScreen() {
-    val pagerState = rememberPagerState()
-    val coroutineScope = rememberCoroutineScope()
-
     val tabs = enumValues<Tab>()
+
+    val pagerState = rememberPagerState(pageCount = { tabs.size })
+    val coroutineScope = rememberCoroutineScope()
 
     Column {
         TabRow(
@@ -50,7 +50,6 @@ fun TabsWithHorizontalPagerScreen() {
         }
 
         HorizontalPager(
-            pageCount = tabs.size,
             state = pagerState,
             userScrollEnabled = true
         ) {
