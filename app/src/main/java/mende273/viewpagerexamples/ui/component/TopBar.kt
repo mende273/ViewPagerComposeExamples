@@ -2,7 +2,7 @@ package mende273.viewpagerexamples.ui.component
 
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -35,7 +35,7 @@ fun TopBar(
 @Composable
 private fun BackNavigationButton(onBackPressed: () -> Unit) {
     IconButton(onClick = { onBackPressed.invoke() }) {
-        Icon(Icons.Filled.ArrowBack, "backIcon")
+        Icon(Icons.AutoMirrored.Filled.ArrowBack, "back icon button")
     }
 }
 

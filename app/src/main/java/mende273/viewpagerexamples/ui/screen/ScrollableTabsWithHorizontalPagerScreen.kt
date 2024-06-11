@@ -6,7 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Tab
@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 import mende273.viewpagerexamples.ui.component.TabIndicator
@@ -35,7 +36,7 @@ fun ScrollableTabsWithHorizontalPagerScreen() {
             contentColor = MaterialTheme.colorScheme.onBackground,
             selectedTabIndex = pagerState.currentPage,
             edgePadding = 0.dp,
-            divider = { Divider(color = MaterialTheme.colorScheme.background) },
+            divider = { HorizontalDivider(color = Color.Transparent) },
             indicator = { TabIndicator(Modifier.tabIndicatorOffset(it[pagerState.currentPage])) }
         ) {
             tabs.forEachIndexed { index, tab ->

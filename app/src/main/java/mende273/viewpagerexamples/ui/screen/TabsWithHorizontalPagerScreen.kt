@@ -6,7 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
@@ -33,7 +33,7 @@ fun TabsWithHorizontalPagerScreen() {
             containerColor = MaterialTheme.colorScheme.background,
             contentColor = MaterialTheme.colorScheme.onBackground,
             selectedTabIndex = pagerState.currentPage,
-            divider = { Divider(color = MaterialTheme.colorScheme.background) },
+            divider = { HorizontalDivider(color = MaterialTheme.colorScheme.background) },
             indicator = { TabIndicator(Modifier.tabIndicatorOffset(it[pagerState.currentPage])) }
         ) {
             tabs.forEachIndexed { index, item ->
