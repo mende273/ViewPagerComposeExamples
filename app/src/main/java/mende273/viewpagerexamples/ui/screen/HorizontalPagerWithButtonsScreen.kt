@@ -1,6 +1,5 @@
 package mende273.viewpagerexamples.ui.screen
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -23,7 +22,6 @@ import mende273.viewpagerexamples.R
 import mende273.viewpagerexamples.ui.component.ViewPagerButton
 import mende273.viewpagerexamples.ui.component.ViewPagerItem
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerWithButtonsScreen() {
     val pageCount = 10

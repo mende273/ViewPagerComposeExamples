@@ -27,7 +27,7 @@ fun HomeScreen(modifier: Modifier = Modifier, onItemClicked: (Screen) -> Unit) {
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Screen.values().filter { it.route != Screen.HOME.route }.forEach { screen ->
+            Screen.entries.filter { it.route != Screen.HOME.route }.forEach { screen ->
                 NavigationButtonComponent(
                     Modifier.fillMaxWidth(),
                     screen = screen,

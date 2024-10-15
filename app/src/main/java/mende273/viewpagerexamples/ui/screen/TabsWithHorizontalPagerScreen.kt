@@ -1,6 +1,5 @@
 package mende273.viewpagerexamples.ui.screen
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,7 +19,6 @@ import kotlinx.coroutines.launch
 import mende273.viewpagerexamples.ui.component.TabIndicator
 import mende273.viewpagerexamples.ui.component.TextComponent
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun TabsWithHorizontalPagerScreen() {
     val tabs = enumValues<Tab>()

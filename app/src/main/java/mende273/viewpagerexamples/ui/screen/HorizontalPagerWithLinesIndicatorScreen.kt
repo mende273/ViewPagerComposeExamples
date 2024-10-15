@@ -1,6 +1,5 @@
 package mende273.viewpagerexamples.ui.screen
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -16,7 +15,6 @@ import androidx.compose.ui.unit.dp
 import mende273.viewpagerexamples.ui.component.ViewPagerItem
 import mende273.viewpagerexamples.ui.component.ViewPagerLinesIndicator
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerWithLinesIndicatorScreen() {
     val pageCount = 5
