@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'mende273.viewpagerexamples'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "mende273.viewpagerexamples"
         minSdk 26
-        targetSdk 35
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
@@ -40,10 +40,10 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.16.0'
-    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.9.24')
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:2.0.21')
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.9.1'
     implementation 'androidx.activity:activity-compose:1.10.1'
-    implementation platform('androidx.compose:compose-bom:2025.04.01')
+    implementation platform('androidx.compose:compose-bom:2025.06.01')
     implementation 'androidx.compose.ui:ui'
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'
@@ -52,12 +52,12 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
-    androidTestImplementation platform('androidx.compose:compose-bom:2025.04.01')
+    androidTestImplementation platform('androidx.compose:compose-bom:2025.06.01')
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
     // navigation component
-    implementation 'androidx.navigation:navigation-compose:2.8.9'
-    androidTestImplementation 'androidx.navigation:navigation-testing:2.8.9'
+    implementation 'androidx.navigation:navigation-compose:2.9.0'
+    androidTestImplementation 'androidx.navigation:navigation-testing:2.9.0'
 }
